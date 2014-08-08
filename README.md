@@ -1,2 +1,5 @@
-# oauthproxy [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Support us][gittip-image]][gittip-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
+# oauthproxy  [![Build Status][travis-image]][travis-url]
 > OAuth proxy server
+
+[travis-url]: https://travis-ci.org/8legd/oauthproxy
+[travis-image]: https://travis-ci.org/8legd/oauthproxy.svg?branch=master
