@@ -31,19 +31,24 @@ function parseRequest(req,callback) {
 	    if (err) {
 	        unsupportedRequest(res);
 	    } else {
-			callback({
-				remote_address: req.connection.remoteAddress,
-			    host: req.headers['host'],
-			    origin: req.headers['origin'],
-			    x_forwarded_for: req.headers["X-Forwarded-For"],
-			    user_agent: req.headers["user-agent"],
-				fingerprint: "TODO hash above",
-				form: {
-					fields: fields
-				}
-			});		
+            var parsedRequest = {
+                remote_address: req.connection.remoteAddress,
+                host: req.headers['host'],
+                origin: req.headers['origin'],
+                x_forwarded_for: req.headers["X-Forwarded-For"],
+                user_agent: req.headers["user-agent"],
+                form: {
+                    fields: fields
+                }
+            }
+			callback(parsedRequest);
 		}
 	});
+}
+
+function createFingerprint(parsedRequest) {
+    return "HASH parsedRequest fields except form";
+
 }
 
 function sendJSONResponse(responseObject,parsedRequest,res) {

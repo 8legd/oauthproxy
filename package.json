@@ -3,23 +3,24 @@
   "subdomain": "oauthproxy",
   "dependencies": {
     "formidable": "~1.0.15",
-    "oauth": "~0.9.12",
-    "bcrypt": "~0.8.0"
+    "oauth": "~0.9.12"
   },
   "version": "0.0.1",
   "engines": {
     "node": "v0.10.x"
   },
   "scripts": {
-	"test": "gulp test",
+    "test": "gulp test",
     "start": "node server.js"
   },
   "devDependencies": {
-	"gulp": "~3.8.7",  
-	"gulp-load-plugins": "~0.5.3",	
-	"gulp-mocha": "~0.5.2",
+    "coveralls": "^2.11.1",
+    "gulp": "~3.8.7",
+    "gulp-load-plugins": "~0.5.3",
+    "gulp-mocha": "~0.5.2",
     "mocha": "~1.21.4",
-    "mocha-better-spec-reporter": "~0.0.2",	
-	"should": "~4.0.4"
+    "mocha-better-spec-reporter": "~0.0.2",
+    "mocha-lcov-reporter": "0.0.1",
+    "should": "~4.0.4"
   }
 }
