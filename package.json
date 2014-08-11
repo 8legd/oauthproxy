@@ -14,13 +14,11 @@
     "start": "node server.js"
   },
   "devDependencies": {
-    "coveralls": "^2.11.1",
     "gulp": "~3.8.7",
     "gulp-load-plugins": "~0.5.3",
     "gulp-mocha": "~0.5.2",
     "mocha": "~1.21.4",
     "mocha-better-spec-reporter": "~0.0.2",
-    "mocha-lcov-reporter": "0.0.1",
     "should": "~4.0.4"
   }
 }
