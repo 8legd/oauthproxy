@@ -19,6 +19,7 @@
     "gulp-mocha": "~0.5.2",
     "mocha": "~1.21.4",
     "mocha-better-spec-reporter": "~0.0.2",
-    "should": "~4.0.4"
+    "should": "~4.0.4",
+    "supertest": "~0.13.0"
   }
 }
