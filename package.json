@@ -3,7 +3,8 @@
   "subdomain": "oauthproxy",
   "dependencies": {
     "formidable": "~1.0.15",
-    "oauth": "~0.9.12"
+    "oauth": "~0.9.12",
+    "jwt-simple": "~0.2.0"
   },
   "version": "0.0.1",
   "engines": {
