@@ -7,13 +7,12 @@ gulp.task('test-libs', function() {
         .pipe($.mocha({reporter: 'mocha-better-spec-reporter'})
   	);
 });
-gulp.task('test-app', ['test-libs'], function() { // Dependency on libs test to pass first
+gulp.task('test', ['test-libs'], function() { // Dependency on libs test to pass first
     return gulp.src('*.test.js', { read: false }) // Don't read file contents just pipe files to mocha
         .pipe($.mocha({reporter: 'mocha-better-spec-reporter'})
     );
 });
-//gulp.task('test', ['test-libs','test-app']);
-gulp.task('test', ['test-libs']);
+
 
 gulp.task('build', function() {
   // TODO

@@ -2,9 +2,10 @@
   "name": "oauthproxy",
   "subdomain": "oauthproxy",
   "dependencies": {
+    "debug": "~2.0.0",
     "formidable": "~1.0.15",
     "oauth": "~0.9.12",
-    "jwt-simple": "~0.2.0"
+    "jsonwebtoken": "~1.2.0"
   },
   "version": "0.0.1",
   "engines": {
